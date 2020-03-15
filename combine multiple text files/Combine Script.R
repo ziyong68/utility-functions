@@ -7,13 +7,13 @@ df1 <- data.frame(a = c(1,2,3,4,5), b = c("dsf df", "ddkk", "f, fds, ffff", "BB"
 df3 <- df2 <- df1
 
 # Pretend we receive several separate text files
-write_tsv(df1, "./file 1.tsv")
-write_tsv(df2, "./file 2.tsv")
-write_tsv(df3, "./file 3.tsv")
+write_tsv(df1, "./combine multiple text files/file 1.tsv")
+write_tsv(df2, "./combine multiple text files/file 2.tsv")
+write_tsv(df3, "./combine multiple text files/file 3.tsv")
 
 # Check all tsv files in work dir.
-file_paths <- Sys.glob("./*.tsv")
-out_file <- "./test.tsv"
+file_paths <- Sys.glob("./combine multiple text files/*.tsv")
+out_file <- "./combine multiple text files/test.tsv"
 file_paths <- file_paths[file_paths != out_file]
 
 # Read each text file and concatenate into a bigger text file
@@ -34,4 +34,4 @@ data_list <- lapply(file_paths, function(file){
 combined_data <- bind_rows(data_list)
 
 # Test to see if reading from the combined file gives the same result as the combined_data df
-read_check <- read_tsv("./test.tsv")
+read_check <- read_tsv("./combine multiple text files/test.tsv")
