@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1569183031267.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2428814585",
+    "id" : "532BCCF",
+    "lastKnownWriteTime" : 1584283553,
+    "last_content_update" : 1584283553504,
+    "path" : "~/R/Mutliple CSV Files into One/Combine Script.R",
+    "project_path" : "Combine Script.R",
+    "properties" : {
+        "cursorPosition" : "32,49",
+        "scrollLine" : "17",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
